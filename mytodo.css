@@ -1,5 +1,144 @@
 body{
     margin: 0;
-    background-color: cornsilk;
+    font-family: sans-serif;
+    /* background-color: rgb(176, 176, 176); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.container {
+    display: flex;
+    width: 30%;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.type-text{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+.type-text>img{
+    width: 100%;
+    height: 220px;
+    display: flex;
+}
+
+.type-area{
+    position: relative;
+    bottom: 43px;
+}
+
+h1{
+    color: rgb(5 5 5);
+    position: absolute;
+    left: 24%;
+    right: auto;
+    margin: 0;
+    width: 50%;
+    top: 20px;
+    text-shadow: 2px 1px rgb(255 255 255);
+}
+
+form {
+    position: absolute;
+    width: 100%;
+}
+
+.type-text>div>form>input {
+    width: 99%;
+    position: relative;
+    bottom: 0;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+}
+
+.type-text>div:first-child{
+    position: relative;
+    bottom: 42px;
+}
+
+input:focus{
+    border-color: transparent;
+    border: none;
+}
+    
+form> button{
+    background-color: transparent;
+    position: absolute;
+    bottom: 4px;
+    right: 9px;
+    border: none;
+    cursor: pointer;
+
+}
+
+form > button > i{
+    background-color: transparent;
+    font-size: 30px;
+    color: #00a9ea;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+/* list see area  */
+.list-area{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+/* decendent selector  */
+.list-area i{
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+
+.list-area > p{
+    margin: 0;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    height: 30px;
+    font-size: 17px;
+
+    
+}
+
+.activity{
+    text-decoration: line-through;
+}
+
+.list-area > div{
+    position: absolute;
+    right: 0;
+}
+
+/* edit   */
+.list-area > div > i:first-child {
+    margin-right: 10px;
+    color: #85ff00;
+}
+
+/* del btn  */
+.list-area > div > i:last-child{
+    color: red;
+    margin-right: 5px;
+}
